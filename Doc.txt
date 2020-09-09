@@ -1,0 +1,45 @@
+*************************************************
+* Project: COBOL Course Final Exam
+* Source code name: PARTCALL.cbl
+* General Descriptions:
+*        1. subroutine SUPPEDIT - validating the suppliers'
+*            information read from the part suppliers' 
+*            dataset.
+*        2. subroutine ADDREDIT - validating the address
+*             information read both from the part suppliers' 
+*            dataset and state zip dataset. 
+* Created by Kun Zhang on 9/9/20.
+***************************************************
+
+Features
+======================================
+
+- SUPPEDIT:
+   SUPPLIER-ACT-DATE must be a proper data format. It suits
+   the layout of MM/DD/YYYY; besides, the value of the month  
+   must be between 1-12, and the amount of the day must be 
+   between 1-31, and the value of the year must be between
+   1900-2020. When SUPPLIER-TYPE = SUBCONTRACTOR,
+   the SUPPLIER-RATING = '3'. The value of SUPPLIER-STATUS 
+   must be among '1', '2', and '3'.
+- ADDREDIT
+   The value of ADDRESS-TYPE must be among '1', '2', and '3'.
+    To search the data tuples in the STATEZIP file, if no matching 
+    zipcode has been found, or the tested zipcode is not between
+    the two zipcodes in in the STATEZIP file, or the state abbreviation
+    does not match, then return an error code.
+
+Contribute
+======================================
+
+- Source Code: https://github.com/kunzhangweb/COBOL
+
+Support
+======================================
+
+kzgoldenwing@gmail.com
+
+License
+======================================
+
+To be determined.
